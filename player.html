@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 10 Players - Football World</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #f0f8ff, #e6ffe6);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: #004d00;
+        }
+
+        .navbar a {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        header h1 {
+            text-align: center;
+            color: #004d00;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .player-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
+        }
+
+        .card {
+            width: 280px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card h5 {
+            color: #004d00;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">⚽ Football World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="players.html">Players</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Top 10 Football Players</h1>
+    </header>
+
+    <!-- Players Section -->
+    <section class="player-list container">
+        <!-- Player Cards -->
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo">
+            <div class="card-body text-center">
+                <h5>Cristiano Ronaldo</h5>
+                <p><strong>Teams:</strong> Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr</p>
+                <p><strong>Goals:</strong> 850+ | <strong>Assists:</strong> 230+</p>
+                <p><strong>Titles:</strong> 5× UCL, 1× Euro Cup</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Lionel_Messi_20180626.jpg" alt="Lionel Messi">
+            <div class="card-body text-center">
+                <h5>Lionel Messi</h5>
+                <p><strong>Teams:</strong> Barcelona, PSG, Inter Miami</p>
+                <p><strong>Goals:</strong> 820+ | <strong>Assists:</strong> 360+</p>
+                <p><strong>Titles:</strong> 4× UCL, 1× World Cup</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Kylian_Mbappé_2018.jpg" alt="Kylian Mbappé">
+            <div class="card-body text-center">
+                <h5>Kylian Mbappé</h5>
+                <p><strong>Teams:</strong> AS Monaco, PSG, Real Madrid</p>
+                <p><strong>Goals:</strong> 300+ | <strong>Assists:</strong> 150+</p>
+                <p><strong>Titles:</strong> 1× World Cup</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Neymar_2018.jpg" alt="Neymar Jr">
+            <div class="card-body text-center">
+                <h5>Neymar Jr</h5>
+                <p><strong>Teams:</strong> Santos, Barcelona, PSG, Al Hilal</p>
+                <p><strong>Goals:</strong> 430+ | <strong>Assists:</strong> 250+</p>
+                <p><strong>Titles:</strong> 1× UCL, 1× Copa Libertadores</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Kevin_De_Bruyne_20180709.jpg" alt="Kevin De Bruyne">
+            <div class="card-body text-center">
+                <h5>Kevin De Bruyne</h5>
+                <p><strong>Teams:</strong> Genk, Chelsea, Wolfsburg, Manchester City</p>
+                <p><strong>Goals:</strong> 160+ | <strong>Assists:</strong> 300+</p>
+                <p><strong>Titles:</strong> 1× UCL, 5× Premier League</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Luka_Modric_2018.jpg" alt="Luka Modric">
+            <div class="card-body text-center">
+                <h5>Luka Modrić</h5>
+                <p><strong>Teams:</strong> Dinamo Zagreb, Tottenham, Real Madrid</p>
+                <p><strong>Goals:</strong> 110+ | <strong>Assists:</strong> 150+</p>
+                <p><strong>Titles:</strong> 5× UCL, 1× Ballon d'Or</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Robert_Lewandowski_2018.jpg" alt="Robert Lewandowski">
+            <div class="card-body text-center">
+                <h5>Robert Lewandowski</h5>
+                <p><strong>Teams:</strong> Dortmund, Bayern Munich, Barcelona</p>
+                <p><strong>Goals:</strong> 600+ | <strong>Assists:</strong> 120+</p>
+                <p><strong>Titles:</strong> 1× UCL, 10× League Titles</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Mohamed_Salah_2018.jpg" alt="Mohamed Salah">
+            <div class="card-body text-center">
+                <h5>Mohamed Salah</h5>
+                <p><strong>Teams:</strong> Basel, Chelsea, Roma, Liverpool</p>
+                <p><strong>Goals:</strong> 320+ | <strong>Assists:</strong> 130+</p>
+                <p><strong>Titles:</strong> 1× UCL, 1× Premier League</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Erling_Haaland_2023.jpg" alt="Erling Haaland">
+            <div class="card-body text-center">
+                <h5>Erling Haaland</h5>
+                <p><strong>Teams:</strong> Salzburg, Dortmund, Man City</p>
+                <p><strong>Goals:</strong> 220+ | <strong>Assists:</strong> 60+</p>
+                <p><strong>Titles:</strong> 1× UCL, 2× Premier League</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Karim_Benzema_2018.jpg" alt="Karim Benzema">
+            <div class="card-body text-center">
+                <h5>Karim Benzema</h5>
+                <p><strong>Teams:</strong> Lyon, Real Madrid, Al Ittihad</p>
+                <p><strong>Goals:</strong> 450+ | <strong>Assists:</strong> 180+</p>
+                <p><strong>Titles:</strong> 5× UCL, 1× Ballon d'Or</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Football World | Player stats are subject to updates ⚽</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

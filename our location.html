@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <title>Football World - Stadium Locations</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #ffeb3b;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #ffeb3b;
+      border: none;
+      color: #333;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: white;
+      transform: scale(1.1);
+    }
+
+    
+    
+  </style>
+</head>
+<body>
+
+  <h1>🏟️ Football World - Stadium Locations</h1>
+  <p>Click below to load famous stadium information using AJAX.</p>
+
+  <button onclick="loadStadium()">Load Stadium Info</button>
+
+  <div id="stadiumInfo"></div>
+
+  <script>
+    function loadStadium() 
+	{
+           let x = new XMLHttpRequest();
+
+            x.open("GET", "stadium.json", true);
+
+            x.onreadystatechange = function() {
+        if (x.readyState === 4 && x.status === 200) {
+          let data = JSON.parse(x.responseText);
+          document.getElementById("stadiumInfo").innerHTML = `
+            <h2>${data.name}</h2>
+            <p><strong>Location:</strong> ${data.city}, ${data.country}</p>
+            <p><strong>Capacity:</strong> ${data.capacity.toLocaleString()} people</p>
+            <p><strong>Opened:</strong> ${data.opened}</p>
+          `;
+        }
+      };
+
+           x.send();
+    }
+  </script>
+</body>
+</html>
