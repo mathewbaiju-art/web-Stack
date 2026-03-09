@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ANGULAR">
+<head>
+    <meta charset="UTF-8">
+    <title>Footballers – AngularJS Filters</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body ng-controller="footballCtrl">
+
+<h2>⚽ Footballers List (AngularJS Filters)</h2>
+
+<!-- Filter (subset of array) -->
+<input type="text" ng-model="searchText" placeholder="Search player">
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Date of Birth</th>
+        <th>Wife</th>
+        <th>Kids</th>
+        <th>Net Worth</th>
+        <th>Higgest Market Value</th>
+        <th></th>
+    </tr>
+
+    <tr ng-repeat="player in footballers | filter:searchText | orderBy:'goals'">
+        
+        <td>{{ player.name | uppercase }}</td>
+
+        <td>{{ player.country | lowercase }}</td>
+        
+        <td>{{ player.dob | date:'dd-MM-yyyy' }}</td>
+
+        <td>{{ player.wife | lowercase}}</td>
+
+        <td>{{ player.kids | lowercase}}</td>
+
+        <td>{{ player.networth | currency:'$' }}</td>
+
+        <td>{{ player.marketValue | currency:'$' }}</td>
+
+    </tr>
+</table>
+
+<script>
+    var app = angular.module("ANGULAR", []);
+
+    app.controller("footballCtrl", function ($scope, $http) {
+
+        $http.get("footballers_Details.json")
+            .then(function (response) {
+                $scope.footballers = response.data;
+            });
+
+    });
+</script>
+
+</body>
+</html>

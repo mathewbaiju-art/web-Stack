@@ -1,0 +1,50 @@
+[
+  { "name": "Lionel Messi", "country": "Argentina", "club": "Inter Miami", "goals": 800, "position": "Forward" },
+  { "name": "Cristiano Ronaldo", "country": "Portugal", "club": "Al Nassr", "goals": 850, "position": "Forward" },
+  { "name": "Neymar Jr", "country": "Brazil", "club": "Al Hilal", "goals": 450, "position": "Forward" },
+  { "name": "Kylian Mbappe", "country": "France", "club": "PSG", "goals": 300, "position": "Forward" },
+  { "name": "Erling Haaland", "country": "Norway", "club": "Manchester City", "goals": 250, "position": "Forward" },
+  { "name": "Kevin De Bruyne", "country": "Belgium", "club": "Manchester City", "goals": 150, "position": "Midfielder" },
+  { "name": "Luka Modric", "country": "Croatia", "club": "Real Madrid", "goals": 120, "position": "Midfielder" },
+  { "name": "Toni Kroos", "country": "Germany", "club": "Real Madrid", "goals": 110, "position": "Midfielder" },
+  { "name": "Sergio Ramos", "country": "Spain", "club": "Sevilla", "goals": 135, "position": "Defender" },
+  { "name": "Virgil van Dijk", "country": "Netherlands", "club": "Liverpool", "goals": 50, "position": "Defender" },
+
+  { "name": "Mohamed Salah", "country": "Egypt", "club": "Liverpool", "goals": 320, "position": "Forward" },
+  { "name": "Robert Lewandowski", "country": "Poland", "club": "Barcelona", "goals": 600, "position": "Forward" },
+  { "name": "Karim Benzema", "country": "France", "club": "Al Ittihad", "goals": 450, "position": "Forward" },
+  { "name": "Harry Kane", "country": "England", "club": "Bayern Munich", "goals": 400, "position": "Forward" },
+  { "name": "Son Heung-min", "country": "South Korea", "club": "Tottenham", "goals": 250, "position": "Forward" },
+
+  { "name": "Bruno Fernandes", "country": "Portugal", "club": "Manchester United", "goals": 180, "position": "Midfielder" },
+  { "name": "Casemiro", "country": "Brazil", "club": "Manchester United", "goals": 90, "position": "Midfielder" },
+  { "name": "Jude Bellingham", "country": "England", "club": "Real Madrid", "goals": 120, "position": "Midfielder" },
+  { "name": "Pedri", "country": "Spain", "club": "Barcelona", "goals": 70, "position": "Midfielder" },
+  { "name": "Gavi", "country": "Spain", "club": "Barcelona", "goals": 60, "position": "Midfielder" },
+
+  { "name": "Bukayo Saka", "country": "England", "club": "Arsenal", "goals": 140, "position": "Forward" },
+  { "name": "Martin Odegaard", "country": "Norway", "club": "Arsenal", "goals": 110, "position": "Midfielder" },
+  { "name": "Declan Rice", "country": "England", "club": "Arsenal", "goals": 80, "position": "Midfielder" },
+
+  { "name": "Antoine Griezmann", "country": "France", "club": "Atletico Madrid", "goals": 350, "position": "Forward" },
+  { "name": "Joao Felix", "country": "Portugal", "club": "Barcelona", "goals": 140, "position": "Forward" },
+
+  { "name": "Achraf Hakimi", "country": "Morocco", "club": "PSG", "goals": 60, "position": "Defender" },
+  { "name": "Theo Hernandez", "country": "France", "club": "AC Milan", "goals": 75, "position": "Defender" },
+  { "name": "Ronald Araujo", "country": "Uruguay", "club": "Barcelona", "goals": 40, "position": "Defender" },
+
+  { "name": "Gianluigi Donnarumma", "country": "Italy", "club": "PSG", "goals": 0, "position": "Goalkeeper" },
+  { "name": "Thibaut Courtois", "country": "Belgium", "club": "Real Madrid", "goals": 0, "position": "Goalkeeper" },
+  { "name": "Alisson Becker", "country": "Brazil", "club": "Liverpool", "goals": 1, "position": "Goalkeeper" },
+  { "name": "Ederson", "country": "Brazil", "club": "Manchester City", "goals": 2, "position": "Goalkeeper" },
+
+  { "name": "Victor Osimhen", "country": "Nigeria", "club": "Napoli", "goals": 200, "position": "Forward" },
+  { "name": "Khvicha Kvaratskhelia", "country": "Georgia", "club": "Napoli", "goals": 130, "position": "Forward" },
+
+  { "name": "Riyad Mahrez", "country": "Algeria", "club": "Al Ahli", "goals": 220, "position": "Forward" },
+  { "name": "Sadio Mane", "country": "Senegal", "club": "Al Nassr", "goals": 300, "position": "Forward" },
+
+  { "name": "Paulo Dybala", "country": "Argentina", "club": "AS Roma", "goals": 280, "position": "Forward" },
+  { "name": "Lautaro Martinez", "country": "Argentina", "club": "Inter Milan", "goals": 260, "position": "Forward" },
+  { "name": "Angel Di Maria", "country": "Argentina", "club": "Benfica", "goals": 290, "position": "Forward" }
+]

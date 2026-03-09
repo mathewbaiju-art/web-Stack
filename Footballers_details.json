@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Lionel Messi",
+    "country": "Argentina",
+    "dob": "1987-06-24",
+    "wife":"Antonia Messi",
+    "kids": "Thiago,Mateo",
+    "networth":780000000,
+    "marketValue": 275000000
+    
+  },
+  {
+    "name": "Cristiano Ronaldo",
+    "country": "Portugal",
+    "club": "Al Nassr",
+    "goals": 873,
+    "position": "Forward",
+    "marketValue": 20000000,
+    "dob": "1985-02-05"
+  },
+  {
+    "name": "Kevin De Bruyne",
+    "country": "Belgium",
+    "club": "Manchester City",
+    "goals": 155,
+    "position": "Midfielder",
+    "marketValue": 60000000,
+    "dob": "1991-06-28"
+  }
+]

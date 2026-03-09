@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Players List</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .players-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .player-card {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .player-card:hover {
+            transform: scale(1.05);
+        }
+
+        .player-card h3 {
+            margin: 0;
+            color: #1e3c72;
+        }
+
+        .player-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .stats {
+            margin-top: 10px;
+            padding: 8px;
+            background: #f1f1f1;
+            border-radius: 8px;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>All Players</h2>
+
+<div class="players-container" id="playersContainer"></div>
+
+<div class="btn-container">
+    <button class="btn" onclick="goBack()">Add New Player</button>
+</div>
+
+<script>
+
+fetch('/players')
+.then(res => res.json())
+.then(data => {
+
+    const container = document.getElementById("playersContainer");
+
+    data.forEach(player => {
+
+        container.innerHTML += `
+            <div class="player-card">
+                <h3>${player.name}</h3>
+
+                <div class="player-info">
+                    <strong>Club:</strong> ${player.club}<br>
+                    <strong>Position:</strong> ${player.position}<br>
+                    <strong>DOB:</strong> ${player.dob}
+                </div>
+
+                <div class="stats">
+                    ⚽ Goals: ${player.goals} <br>
+                    🎯 Assists: ${player.assists}
+                </div>
+
+                <div class="player-info" style="margin-top:10px;">
+                    <strong>About:</strong><br>
+                    ${player.about}
+                </div>
+            </div>
+        `;
+    });
+
+});
+
+function goBack() {
+    window.location.href = "/";
+}
+
+</script>
+
+</body>
+</html>

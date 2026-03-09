@@ -1,0 +1,32 @@
+[
+  {
+    "id": 170825001,
+    "name": "Lionel Messi",
+    "club": "Inter Miami",
+    "position": "Forward",
+    "goals": 25,
+    "assists": 18,
+    "dob": "1987-06-24",
+    "about": "Argentine professional footballer widely regarded as one of the greatest players of all time."
+  },
+  {
+    "id": 170825002,
+    "name": "Cristiano Ronaldo",
+    "club": "Al Nassr",
+    "position": "Forward",
+    "goals": 30,
+    "assists": 10,
+    "dob": "1985-02-05",
+    "about": "Portuguese football legend known for his athleticism, goal scoring ability, and leadership."
+  },
+  {
+    "id": 170825003,
+    "name": "Kevin De Bruyne",
+    "club": "Manchester City",
+    "position": "Midfielder",
+    "goals": 12,
+    "assists": 20,
+    "dob": "1991-06-28",
+    "about": "Belgian midfielder famous for his vision, passing accuracy, and playmaking skills."
+  }
+]
